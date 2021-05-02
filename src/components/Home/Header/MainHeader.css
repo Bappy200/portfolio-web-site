@@ -1,0 +1,52 @@
+main {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+}
+.header-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.text-area {
+  width: 50%;
+}
+.text-area h1 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.image-area {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.image-area img {
+  width: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+  }
+  .image-area,
+  .text-area {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .image-area img {
+    width: 100%;
+  }
+  .text-area h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+}

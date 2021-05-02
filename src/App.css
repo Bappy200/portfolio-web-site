@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+/* google fonts link */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h2,
+p {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* content */
+.content {
+  padding: 50px 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* brand-button */
+.brand-button {
+  border: none;
+  padding: 10px 20px;
+  width: 200px;
+  text-decoration: none !important;
+  margin-top: 20px;
+  font-family: "montserrat", sans-serif;
+  text-transform: uppercase;
+  border-radius: 6px;
+  color: #fff;
+  background-size: 200%;
+  transition: 1s;
+  background-image: linear-gradient(to left, #12cbc4, #0652dd, #12cbc4);
+}
+.brand-button:hover {
+  background-position: right;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Heading text */
+.heading-text {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.heading-text h2 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.tsparticles-canvas-el {
+  position: absolute !important;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media only screen and (max-width: 600px) {
+  .content {
+    padding: 25px 50px;
   }
 }
