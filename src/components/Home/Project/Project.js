@@ -59,7 +59,7 @@ function Project() {
         },
     ]
   return (
-    <section className="projects-section content">
+    <section id='projects' className="projects-section content">
       <div className="heading-text">
         <h2>Our Projects</h2>
       </div>

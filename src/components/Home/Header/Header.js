@@ -4,7 +4,7 @@ import MainHeader from './MainHeader'
 
 function Header() {
     return (
-        <div style={{height:'100vh'}}>
+        <div id='home' style={{height:'100vh'}}>
             <NavBar></NavBar>
             <MainHeader></MainHeader>
         </div>

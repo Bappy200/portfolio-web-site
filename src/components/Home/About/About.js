@@ -4,7 +4,7 @@ import aboutImage from "../../../images/aboutImage1.png";
 import "./About.css";
 function About() {
   return (
-    <section className="about-section content">
+    <section id='about' className="about-section content">
       <Row>
         <Col sm className="about-image">
           <img src={aboutImage} alt="aboutimage" />

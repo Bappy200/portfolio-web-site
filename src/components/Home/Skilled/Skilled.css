@@ -1,0 +1,16 @@
+.skilled {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.progress {
+  width: 100%;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .skilled h3 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}

@@ -1,11 +1,40 @@
-import React from 'react'
-
+import { faFacebook, faGithub, faHackerrank, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import "./Footer.css";
 function Footer() {
-    return (
-        <footer className='content'>
-            <h2>footer comming..</h2>
-        </footer>
-    )
+  return (
+    <div class="footer-basic">
+      <footer>
+        <div class="social">
+          <a href="https://github.com/Bappy200" target='blank'>
+            <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+          </a>
+          <a href="https://www.hackerrank.com/sbappyi">
+            <FontAwesomeIcon icon={faHackerrank}></FontAwesomeIcon>
+          </a>
+          <a href="https://www.linkedin.com/in/sajjadul-ib/" target='blank'>
+          <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
+          </a>
+          <a href="https://www.facebook.com/mdsajjadulislam.bappy.7" target='blank'>
+            <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
+          </a>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#home">Home</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#about">About</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#skilled">Sklled</a>
+          </li>
+        </ul>
+        <p class="copyright">Sajjadul islam © {new Date().getFullYear()}</p>
+      </footer>
+    </div>
+  );
 }
 
-export default Footer
+export default Footer;
